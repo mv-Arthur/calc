@@ -1,0 +1,147 @@
+*{
+    font-family: 'Roboto';
+}
+.all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #70707038;
+    border-radius: 45px;
+    padding: 30px 20px 30px 50px;
+}
+
+
+.calc__header {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.calc__items {
+    display: flex;
+    margin-top: 20px;
+    
+}
+.calc__descr {
+    font-weight: 700;
+    font-size: 17px;
+    /* margin-right: 5px; */
+}
+.calc__item {
+    display: flex;
+    align-items: flex-end;
+}
+.calc__item input {
+    height: 30px;
+    width: 50px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.calc__item span{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.calc__item_first {
+    border-right:1px solid black;
+    padding-right: 20px;
+}
+.calc__item_second {
+    padding-left:20px;
+}
+.calc__button {
+    margin-top: 20px;
+    width: 200px;
+    height: 32px;
+    background-color: #4e4d4dab;
+    ;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;  
+    transition: 0.3s;
+}
+
+.calc__button:hover{
+    background-color: #383838ab;
+    border-radius: 15px;
+}
+
+.input_data{
+    font-size: 25px;
+}
+
+#output{
+    padding: 0 20px 0 20px;
+    display: block;
+    width: 600px;
+    height: 300px;
+    background-color:#7070703d;
+    border-radius: 30px;
+}
+
+#output_zag{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#output_text_one{
+    margin-top: 5px;
+    text-align: start;
+}
+
+#output_text_two{
+    margin-top: -15px;
+}
+
+#output_product{
+    display: flex;
+}
+
+#output_img{
+    width: 60px;
+    height:60px;
+}
+
+#output_img_name{
+    margin-top: 0px;
+    height: 5px;
+}
+
+#output_product_name{
+    margin: 0 0 0 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#output_img_href{
+    font-size: 14px;
+    text-decoration: none;
+    width: 350px; 
+}
+
+#output_img_line{
+    width: 350px;
+    height: 1px;
+    background-color:black;
+    margin: 0 0 0 0;
+}
+
+#btn{
+    margin: 0 0 0 20px;
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #8C959D; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 20px 30px 20px 30px; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+    transition: ease-in 0.3s;
+}
+
+#btn:hover{
+    border: none;
+    border-radius: 20px;
+    background-color: #7b838a;
+}

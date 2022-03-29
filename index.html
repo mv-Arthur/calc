@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="all" class="all">
+    <div class="calc">
+        <div class="calc__inputs">
+            <h1 class="calc__header">Тип материала</h1>
+            <select name="first" id="first" class="calc__input">
+                <option value="1" selected="selected">Грунтовка</option>
+                <option value="2">Бетоноконтакт</option>
+                <option value="3">Грунтовка по металлу</option>
+                <option value="4">Пескобетон</option>
+                <option value="5">Керамзит</option>
+                <option value="6">М-150, М-200</option>
+                <option value="7">Штукатурка гипсовая</option>
+                <option value="8">Штукатурка цементная</option>
+                <option value="9">Штукатурно-клеевая смесь</option>
+                <option value="10">Шпатлевка готовая</option>
+                <option value="11">Шпатлевка в мешках</option>
+                <option value="12">Шпатлевка цементная</option>
+                <option value="13">Клей для плитки</option>
+                <option value="14">Клей для блоков и ПГП</option>
+                <option value="15">Цемент</option>
+                <option value="16">Щебень</option>
+                <option value="17">Песок</option>
+                <option value="18">Пластификатор</option>
+                <option value="19">Наливные полы</option>
+                <option value="20">Ровнитель для пола</option>
+                <option value="21">Стяжка</option>
+              </select>
+        </div>
+        <div class="calc__inputs">
+            <h1 class="calc__header">Продукт</h1>
+            <select name="second" id="second" class="calc__input"></select>
+        </div>
+        <div class="calc__items">
+            <div class="calc__item calc__item_first">
+                <div class="calc__descr">Площадь<br> поверхности</div>
+                <input maxlength="6" class="num" id="button1" value="1" type="text">
+                <span>м²</span>
+            </div>
+            <div class="calc__item calc__item_second">
+                <div class="calc__descr">Толщина<br> слоя</div>
+                <input maxlength="6" class="num" id="button2" value="1" type="text">
+                <span>мм</span>
+            </div>
+        </div>
+        <button onclick="calc()" type="button" class="calc__button">Расчитать</button>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>
